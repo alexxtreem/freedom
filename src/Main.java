@@ -1,14 +1,17 @@
 import java.awt.image.BufferedImage;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Main {
     public static void main (String[] args) throws java.lang.Exception
     {
         System.out.println("Кофе-машина");
-
         //TODO: read from console
-        int moneyAmount = 120;
+        Scanner scanner = new Scanner(System.in);
+        int moneyAmount = scanner.nextInt();
         System.out.println("Вы внесли: " + moneyAmount + " руб.");
 
         int[] drinkPrices = {150, 80, 20, 40};
@@ -34,7 +37,8 @@ public class Main {
         System.out.println(formatter.format(now));
 
         //TODO: get screenshot to BufferedImage
-//
+//        BufferedImage image = null;
+//        System.out.println(image.getWidth() + "x" + image.getHeight());
 
         //TODO: send screenshot of code and result with #ilovejava
     }
