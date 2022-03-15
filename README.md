@@ -1,2 +1,1 @@
-#This is new script for 
-#backup some folders on the server
+#Script for some work with SB and server
